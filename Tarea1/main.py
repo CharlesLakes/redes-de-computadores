@@ -57,7 +57,7 @@ img_binary += p2tcp
 
 if data_img["PARTS"] > 2:
     p3tcp = get_pudp(s_udp,HOST,int(data_img["P3UDP"]),data_img,3)
-    img_binary += p2tcp
+    img_binary += p3tcp
 
 file = open("output.png","wb")
 file.write(img_binary)
